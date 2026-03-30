@@ -1,12 +1,271 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link FonteAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Link Css -->
+    <link rel="stylesheet" href="style.css" />
+    <title>uzumMarket</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header_container max-width display">
+        <div class="header_logo display">
+          <img src="./assste/logotipUzum.png" />
+          <h1>uzum market</h1>
+        </div>
+        <div class="display">
+          <button class="header_btn">Katalog</button>
+          <div class="header_input">
+            <input type="text" placeholder="Mahsulotlar va turkumlar izlash" />
+            <button class="header_search_icen">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </div>
+          <nav class="display">
+            <a class="display header_ul">
+              <i class="fa-regular fa-user"></i>
+              <li>Kirish</li>
+            </a>
+            <a class="display header_ul">
+              <i class="fa-regular fa-heart"></i>
+              <li>Saralangan</li>
+            </a>
+            <a href="./karzinka.html" class="display header_ul">
+              <i class="fa-solid fa-basket-shopping"></i>
+                <li>Savat <span id="cartCount">0</span></li>
+            </a>
+          </nav>
+      </div>
+    </header>
+
+    <div class="cards max-width">
+      <div class="card">
+        <div class="card_img">
+          <img src="./assste/original.webp" />
+        </div>
+        <div class="card_padding">
+          <p class="card_sum">46 520</p>
+          <p class="card_centrSum">46 990</p>
+          <div class="card_subSum">3 328 so'm/oyiga</div>
+          <p class="card_text">
+            Ofis texnikalari uchun qog'oz varaqlari Sylvamo Svetatopy, A4f
+            C07/3, 500
+          </p>
+          <div class="card_star">
+            <i class="fa-solid fa-star"></i>
+            <p>4.9 (41475 sahrhlar)</p>
+          </div>
+          <div class="card_btns">
+            <div class="wrapperBtn">
+              <div class="myBtns display">
+                <button class="minusBtn">-</button>
+                <span class="count">1</span>
+                <button class="plusBtn">+</button>
+              </div>
+            </div>
+            <button class="card_btn">Ertaga</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card_img">
+          <img src="./assste/nivea.webp" />
+        </div>
+        <div class="card_padding">
+          <p class="card_sum">38 600</p>
+          <p class="card_centrSum">57 990</p>
+          <div class="card_subSum">38 600 so'm/oyiga</div>
+          <p class="card_text">
+            NIVEA MEN dush uchun gel, dengiz minerallari bilanuyg'otuvchi, <br>250 ml
+          </p>
+          <div class="card_star">
+            <i class="fa-solid fa-star"></i>
+            <p>3.8 (41475 sahrhlar)</p>
+          </div>
+          <div class="card_btns">
+            <div class="wrapperBtn">
+              <div class="myBtns display">
+                <button class="minusBtn">-</button>
+                <span class="count">1</span>
+                <button class="plusBtn">+</button>
+              </div>
+            </div>
+            <button class="card_btn">Ertaga</button>
+          </div>
+        </div>
+      </div>
+
+        <div class="card">
+        <div class="card_img">
+          <img src="./assste/chay.webp" />
+        </div>
+        <div class="card_padding">
+          <p class="card_sum">26 937</p>
+          <p class="card_centrSum">28 060</p>
+          <div class="card_subSum">1 428 so'm/oyiga</div>
+          <p class="card_text">
+            Uy, maktab, bolalar bog'chasi va ofis uchun Double A rangli qog'ozi, <br> A4
+          </p>
+          <div class="card_star">
+            <i class="fa-solid fa-star"></i>
+            <p>5.0 (202 sahrhlar)</p>
+          </div>
+          <div class="card_btns">
+            <div class="wrapperBtn">
+              <div class="myBtns display">
+                <button class="minusBtn">-</button>
+                <span class="count">1</span>
+                <button class="plusBtn">+</button>
+              </div>
+            </div>
+            <button class="card_btn">Ertaga</button>
+          </div>
+        </div>
+      </div>
+
+        <div class="card">
+        <div class="card_img">
+          <img src="./assste/oil.webp" />
+        </div>
+        <div class="card_padding">
+          <p class="card_sum">48 750</p>
+          <p class="card_centrSum">52 990</p>
+          <div class="card_subSum">3 753 so'm/oyiga</div>
+          <p class="card_text">
+            Xushbo'ylangan suv Avon Summer White Maldives<br>50 ml
+          </p>
+          <div class="card_star">
+            <i class="fa-solid fa-star"></i>
+            <p>4.7 (80 sahrhlar)</p>
+          </div>
+          <div class="card_btns">
+            <div class="wrapperBtn">
+              <div class="myBtns display">
+                <button class="minusBtn">-</button>
+                <span class="count">1</span>
+                <button class="plusBtn">+</button>
+              </div>
+            </div>
+            <button class="card_btn">Ertaga</button>
+          </div>
+        </div>
+      </div>
+
+        <div class="card">
+        <div class="card_img">
+          <img src="./assste/niveaMen.webp" />
+        </div>
+        <div class="card_padding">
+          <p class="card_sum">71 030</p>
+          <p class="card_centrSum">73 990</p>
+          <div class="card_subSum">5 240 so'm/oyiga</div>
+          <p class="card_text">
+            NIVEA MEN soqoldan keyin balzam, aloe vera bilan himoya va parvarish <br>250 ml
+          </p>
+          <div class="card_star">
+            <i class="fa-solid fa-star"></i>
+            <p>4.9 (123 sahrhlar)</p>
+          </div>
+          <div class="card_btns">
+            <div class="wrapperBtn">
+              <div class="myBtns display">
+                <button class="minusBtn">-</button>
+                <span class="count">1</span>
+                <button class="plusBtn">+</button>
+              </div>
+            </div>
+            <button class="card_btn">Ertaga</button>
+          </div>
+        </div>
+      </div>
+
+        <div class="card">
+        <div class="card_img">
+          <img src="./assste/esty.webp" />
+        </div>
+        <div class="card_padding">
+          <p class="card_sum">38 600</p>
+          <p class="card_centrSum">57 990</p>
+          <div class="card_subSum">2 600 so'm/oyiga</div>
+          <p class="card_text">
+            EASTY dush uchun gel, dengiz minerallari bilanuyg'otuvchi, <br>250 ml
+          </p>
+          <div class="card_star">
+            <i class="fa-solid fa-star"></i>
+            <p>4.0 (367 sahrhlar)</p>
+          </div>
+          <div class="card_btns">
+            <div class="wrapperBtn">
+              <div class="myBtns display">
+                <button class="minusBtn">-</button>
+                <span class="count">1</span>
+                <button class="plusBtn">+</button>
+              </div>
+            </div>
+            <button class="card_btn">Ertaga</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <div v class="footer_inner max-width">
+        <div class="bizHaqimizda">
+          <h3>Biz haqimizda</h3>
+          <a>Topshirish punktlari</a>
+          <a>Vakansiyalar</a>
+        </div>
+        <div class="foydalanuvchiga">
+          <h3>Foydalanuvchilarga</h3>
+          <a>Biz bilan bog'lanish</a>
+          <a>Savol - Javob</a>
+        </div>
+        <div class="tadbirkorga">
+          <h3>Tadbirkorlarga</h3>
+          <a>Uzumda soting</a>
+          <a>Sotuvchi kabinetiga kirish</a>
+          <a>Topshirish punktini ochish</a>
+        </div>
+        <div class="ilovaniYuklash">
+          <h3>Ilovani yuklab olish</h3>
+          <a>AppStore</a>
+          <a>Google Play</a>
+          <br />
+          <h3>Uzum ijtimoiy tarmoqlarda</h3>
+          <div class="ilovalar_iceni"></div>
+        </div>
+      </div>
+      <div class="footer_top max-width display">
+        <div class="footer_top_one display">
+          <h2>Maxfiylik kelishuvi</h2>
+          <h2>Foydalanuvchi kelishuvi</h2>
+          <h2>
+            SHAXSIY MA'LUMOTLARNI QAYTA ISHLASH NIZOMI «UZUM MARKET» MCHJ XK
+          </h2>
+          <div class="footer_top_two">
+            <p>
+              «2026© XK MCHJ «UZUM MARKET». STIR 309376127. Barcha huquqlar
+              himoyalangan»
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
 </html>
