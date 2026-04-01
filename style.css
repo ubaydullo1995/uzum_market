@@ -149,13 +149,81 @@ a {
     background-color: var(--minus-color);
 }
 
+/* sociols */
+.sociols {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--gap-10);
+    margin-bottom: 30px;
+}
+
+.sociol {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--gap-10);
+    cursor: pointer;
+}
+
+.sociol img {
+    width: 25px;
+    height: 25px;
+}
+
+.sociol p {
+    font-size: var(--font-size-16);
+}
+
+.sociol_nav ul li {
+    cursor: pointer;
+    color: var(--blackDark-color);
+    transition: all .4s ease;
+}
+
+.sociol_nav ul li:hover {
+    text-decoration: underline;
+    color: var(--black-color);
+}
+
+/* subSociol */
+.subSociol {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--gap-30);
+    margin-bottom: 40px;
+}
+
+.subSociol button {
+    padding: 8px 30px;
+    border-radius: 14px;
+    border: none;
+    font-size: var(--font-size-16);
+    transition: all .4s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-20);
+}
+
+.subSociol button:hover {
+    background-color: var(--blackDark-color);
+}
+
+.subSociol button img {
+    width: 40px;
+    height: 40px;
+}
+
+
 /* Cards */
 .cards {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: var(--gap-20);
-    margin-bottom: 30px;
+    margin-bottom: 70px;
 }
+
 
 .card {
     border-top-left-radius: 20px;
@@ -346,4 +414,10 @@ a {
 .deleteBtn {
     padding: 10px 15px;
     border: none;
+}
+
+
+/* karzinka */
+.savatcha {
+    margin-bottom: 40px;
 }
